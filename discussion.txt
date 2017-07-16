@@ -1,0 +1,76 @@
+### RUNTIME ###
+
+1 - When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches infinity. You can think of the workload as the number of tasks required to complete a job. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+
+    The workload is determined by the amount of crackers in the box. If there is one cracker, workload is one. If there are two thousand, workload is two thousand. One could say the workload is 'n', where 'n' is the number of crackers.
+    Best case: elephant is the first one you get out of the box.
+    Last case: elephant isn't there and you had to look through the entire box to find that out.
+
+2 - Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity:
+    
+    O(1)
+    O(log n)
+    O(n)
+    O(n log n)
+    O(n^2)
+    O(2^n)
+
+
+### STACKS AND QUEUES ###
+
+1 - In the following cases, would a stack or queue be a more appropriate data structure?
+    1 - The process of loading and unloading pallets onto a flatbed truck
+        Stack
+
+    2 - Putting bottle caps on bottles of beer as they roll down an assembly line
+        Queue
+
+    3 - Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+
+
+2 - Describe two more situations where a queue would be an appropriate data structure.
+    A line.
+    A list of directions (like a recipe)
+
+3 - Describe two more situations where a stack would be an appropriate data structure.
+    A stack of CD's (the tube, with the stick in the middle)
+    Going through a stack of papers. 
+
+
+### LINKED LISTS ###
+
+1 - Given the linked list below, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+    Nodes: the entire boxes with data in them
+    Data: "Apple", "Berry", "Cherry"
+    Head: The very first node in the list, which right now is the node which's data is "Apple". Head points to "Apple"
+    Tail: The last node in the chain, which right now is the node that contains "Cherry".
+
+2 - What’s the difference between doubly and singly-linked lists?
+    The singly linked list has only one "direction" to it. You can't go backwards. 
+    Doubly linked list allows you to go back and forth from each node. 
+
+3 - Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+    If you don't know the tail, you have to go through the entire list in order to find the very last item and then append. 
+
+### TREES ### 
+
+1 - Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burritos (starting at food)? (Assume nodes are enqueued in left-to-right order.) Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+    food -> Italian -> Indian -> Mexican -> lasagna -> pizza -> tikka masala -> saag -> burritos. 
+
+2 - Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? (Assume nodes are pushed in left-to-right order.) Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+    food -> Italian -> lasagna -> pizza -> thin curst -> Chicago-style.
+
+3 - How is a binary search tree different from other trees?
+    Every node can only have a maximum of two children. 
+    The left child is always lesser than the parent and the right child is always greater than the parent. 
+
+
+
+
+
+
+
+
+
+
+
