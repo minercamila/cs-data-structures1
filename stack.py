@@ -99,8 +99,7 @@ class Stack(object):
         """
 
         # FIXME
-        self._list = []
-        return 
+        self._list = [] 
         
 
     def is_empty(self):
